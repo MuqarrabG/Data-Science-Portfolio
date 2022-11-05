@@ -1,0 +1,12 @@
+from sklearn.model_selection import train_test_split
+data.sort_values(by=['quality'],ascending=False,inplace=True)
+print(data['quality'].value_counts())
+
+x_ex1 = data.copy().drop(columns=['quality', 'volatile_acidity', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'pH'])
+y_ex1 = data.copy()['quality']
+x_ex1_array = x_ex1.values
+y_ex1_array = y_ex1.values
+x_train = x_ex1_array[0:int((len(y_ex1_array)+1)*0.9),:]
+x_test = x_ex1_array[int((len(y_ex1_array)+1)*0.9):,:]
+y_train = y_ex1_array[0:int((len(y_ex1_array)+1)*0.9)]
+y_test = y_ex1_array[int((len(y_ex1_array)+1)*0.9):]
