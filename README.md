@@ -1,6 +1,6 @@
 # Data Science Portfolio
 
-Author - 
+Author - Muqarrab Ghori
 
-This repository contains the files for the Portfolio task for COMP2200/6200 in S2 2022. 
+This repository contains the files for the Portfolio task for COMP2200 in S2 2022. 
 
